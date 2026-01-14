@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Flashcard Maker</h1>
+            <h2>Use this application to create and learn with a flashcard set.</h2>
+        </header>
+        <div id="realBody">
+            <p>Create your set below</p>
+            <form id="form">
+                <label for="question">Question:</label>
+                <input type="text" id="question" placeholder="Enter question"><br>
+    
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer" placeholder="Enter answer"><br>
+    
+                <button type = "button" onclick="AddCard()">Save Flashcard</button>
+                
+                <button type = "button" onclick = "ClearCards()" > Clear All Flashcards</button>
+                <p id="Flash"></p>
+            </form>
+            <p>Card: <span id="current_card"></span> <br>Total Cards: <span id="card_total"></span></p>
+            <div id="flashcard"><p></p></div>
+            <div class="container">
+                <div><button type="button" onclick="back()" id="right">< Last Card</button></div>
+                <div><button type="button" onclick="flipCard()" id = "flip" >Flip Card</button></div>                    
+                <div><button type="button" onclick="next()" id="wrong">Next Card ></button></div>
+            </div>
+        </div>
+        <div id="footer"><p></p>
+            <div class="container1">
+                <div><button type="button" onclick="feedback()" id="feedback">Feedback</button></div>
+                <div><p>Created by Himel Dey and Wyatt Newman</div>
+                <div><button type="button" onclick="window.scrollTo(0, 0);" id="top">Back to Top</button></div>
+            </div>
+        </div>
+        <script src="code.js"></script>
+    </body>
+    
+</html>
